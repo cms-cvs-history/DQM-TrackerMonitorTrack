@@ -1,0 +1,6 @@
+  # MonitorTrackGlobal
+  module MonitorTrackGlobal = MonitorTrackGlobal
+  {
+    bool OutputMEsInRootFile = false
+    string OutputFileName="test_monitortrackparameters.root"
+  }

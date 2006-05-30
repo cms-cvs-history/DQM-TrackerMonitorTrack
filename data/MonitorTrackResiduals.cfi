@@ -1,0 +1,7 @@
+  # MonitorTrackResiduals
+  module MonitorTrackResiduals = MonitorTrackResiduals
+  {
+    bool OutputMEsInRootFile = true
+    string OutputFileName="test_monitortracks.root"
+  }
+
