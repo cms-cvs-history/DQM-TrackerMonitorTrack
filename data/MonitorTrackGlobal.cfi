@@ -2,5 +2,9 @@
   module MonitorTrackGlobal = MonitorTrackGlobal
   {
     bool OutputMEsInRootFile = false
+    bool MTCCData = false
     string OutputFileName="test_monitortrackparameters.root"
+    string TrackProducer="TrackProducer"
+    string TrackLabel=""
+
   }

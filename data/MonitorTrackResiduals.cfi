@@ -3,5 +3,8 @@
   {
     bool OutputMEsInRootFile = true
     string OutputFileName="test_monitortracks.root"
+    string TrackCandidateProducer="RoadSearchTrackCandidates"
+    string TrackCandidateLabel=""
+
   }
 
