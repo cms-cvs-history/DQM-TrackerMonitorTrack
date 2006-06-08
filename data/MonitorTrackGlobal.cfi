@@ -6,5 +6,10 @@
     string OutputFileName="test_monitortrackparameters.root"
     string TrackProducer="TrackProducer"
     string TrackLabel=""
-
+    double TkSizeBin=10
+    double TkSizeMin=-5
+    double TkSizeMax=5
+    double RecHitBin=15
+    double RecHitMin=-10
+    double RecHitMax=35
   }
