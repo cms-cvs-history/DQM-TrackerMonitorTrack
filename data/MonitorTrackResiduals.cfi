@@ -4,7 +4,7 @@
     string TrackCandidateProducer="RoadSearchTrackCandidates"
     string TrackCandidateLabel=""
     //
-    bool OutputMEsInRootFile = true
+    bool OutputMEsInRootFile = false
     string OutputFileName="test_monitortracks.root"
   }
 
