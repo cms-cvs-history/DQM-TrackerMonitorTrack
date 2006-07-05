@@ -1,7 +1,7 @@
   # MonitorTrackGlobal
   module MonitorTrackGlobal = MonitorTrackGlobal
   {
-    string TrackProducer="TrackProducer"
+    string TrackProducer="RSAnalytical"
     string TrackLabel=""
     //
     double TkSizeBin=10
