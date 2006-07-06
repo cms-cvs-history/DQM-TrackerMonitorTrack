@@ -6,5 +6,7 @@
     //
     bool OutputMEsInRootFile = false
     string OutputFileName="test_monitortracks.root"
+    string TTRHBuilder = "WithTrackAngle"
+    string  Fitter = "KFFitter" 
   }
 
