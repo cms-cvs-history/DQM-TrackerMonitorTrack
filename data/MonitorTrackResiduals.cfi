@@ -1,7 +1,7 @@
   # MonitorTrackResiduals
   module MonitorTrackResiduals = MonitorTrackResiduals
   {
-    string TrackCandidateProducer="RoadSearchTrackCandidates"
+    string TrackCandidateProducer="rsTrackCandidates"
     string TrackCandidateLabel=""
     //
     bool OutputMEsInRootFile = false
