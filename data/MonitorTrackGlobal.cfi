@@ -4,12 +4,46 @@
     string TrackProducer="rsAnalyticalTracks"
     string TrackLabel=""
     //
-    double TkSizeBin=10
-    double TkSizeMin=-5
-    double TkSizeMax=5
-    double RecHitBin=15
-    double RecHitMin=-10
-    double RecHitMax=35
+    int32 TkSizeBin=500
+    double TkSizeMin = 0.0
+    double TkSizeMax = 500.0
+
+    int32 RecHitBin=22
+    double RecHitMin = 3
+    double RecHitMax = 25
+
+    int32 PhiBin = 100
+    double PhiMin = -3.2
+    double PhiMax = 3.2
+
+    int32 EtaBin = 100
+    double EtaMin = -3.0
+    double EtaMax = 3.0
+
+    int32 ThetaBin = 100
+    double ThetaMin = 0.0
+    double ThetaMax = 3.2
+
+    int32 Chi2Bin = 100
+    double Chi2Min = -0.5
+    double Chi2Max = 500
+
+    int32 TrackPtBin = 20
+    double TrackPtMin = -0.5
+    double TrackPtMax = 19.5
+
+    int32 TrackPxBin = 100
+    double TrackPxMin = -50.0
+    double TrackPxMax = 50.0
+
+    int32 TrackPyBin = 100
+    double TrackPyMin = -50.0
+    double TrackPyMax = 50.0
+
+    int32 TrackPzBin = 100
+    double TrackPzMin = -50.0
+    double TrackPzMax = 50.0
+
     //
     bool MTCCData = false
     bool OutputMEsInRootFile = false
