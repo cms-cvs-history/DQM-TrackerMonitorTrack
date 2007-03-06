@@ -3,6 +3,8 @@
   {
     string TrackProducer="rsAnalyticalTracks"
     string TrackLabel=""
+    string AlgoName="ctf"
+
     //
     int32 TkSizeBin=500
     double TkSizeMin = 0.0
