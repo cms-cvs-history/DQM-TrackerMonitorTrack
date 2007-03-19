@@ -1,0 +1,10 @@
+  # MonitorTrackGlobal
+  module MonitorTrackGlobalWithCosmicTF = MonitorTrackGlobal from "DQM/TrackerMonitorTrack/data/MonitorTrackGlobal.cfi"
+  replace MonitorTrackGlobalWithCosmicTF.TrackProducer="cosmictrackfinder"
+  replace MonitorTrackGlobalWithCosmicTF.AlgoName="cosmicTF"
+
+  replace MonitorTrackGlobalWithCosmicTF.TkSizeBin=11
+  replace MonitorTrackGlobalWithCosmicTF.TkSizeMin = -0.5
+  replace MonitorTrackGlobalWithCosmicTF.TkSizeMax = 10.5
+
+  replace MonitorTrackGlobalWithCosmicTF.OutputFileName="test_monitortrackparameters_cosmicTF.root"
