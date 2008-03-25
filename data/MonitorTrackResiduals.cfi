@@ -1,11 +1,20 @@
-  # MonitorTrackResiduals
-  module MonitorTrackResiduals = MonitorTrackResiduals
-  {
-    string TrackCandidateProducer="rsTrackCandidates"
-    string TrackCandidateLabel=""
-    //
+# MonitorTrackResiduals
+module MonitorTrackResiduals = MonitorTrackResiduals
+{
+
     bool OutputMEsInRootFile = false
-    string OutputFileName="test_monitortracks.root"
-    string TTRHBuilder = "WithTrackAngle"
-    string  Fitter = "KFFitter" 
-  }
+    string OutputFileName="test_monitortracks.root"    
+    
+    // should histogramms on module level be booked and filled?
+    bool Mod_On = true  
+    
+    // input for Tracks and Trajectories, should be TrackRefitter
+    // or similar
+    InputTag Tracks = TrackRefitter
+    string trajectoryInput = "TrackRefitter"
+    
+    // bining and range for absolute and normalized residual histogramms
+    PSet TH1ResModules = { int32 Nbinx =  90  double xmin = -3.0 double xmax =  3.0 }  
+    PSet TH1NormResModules = { int32 Nbinx =  90  double xmin = -3.0 double xmax =  3.0 }  
+}
+ 
