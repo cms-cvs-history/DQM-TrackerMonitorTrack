@@ -8,6 +8,9 @@ module MonitorTrackResiduals = MonitorTrackResiduals
     // should histogramms on module level be booked and filled?
     bool Mod_On = true  
     
+    // should all MEs be reset after each run?
+    bool ResetAfterRun = true
+
     // input for Tracks and Trajectories, should be TrackRefitter
     // or similar
     InputTag Tracks = TrackRefitter
