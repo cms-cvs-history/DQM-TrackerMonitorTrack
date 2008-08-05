@@ -17,7 +17,7 @@ module MonitorTrackResiduals = MonitorTrackResiduals
     string trajectoryInput = "TrackRefitter"
     
     // bining and range for absolute and normalized residual histogramms
-    PSet TH1ResModules = { int32 Nbinx =  90  double xmin = -3.0 double xmax =  3.0 }  
-    PSet TH1NormResModules = { int32 Nbinx =  90  double xmin = -3.0 double xmax =  3.0 }  
+    PSet TH1ResModules = { int32 Nbinx =  120  double xmin = -2.0 double xmax =  2.0 }  
+    PSet TH1NormResModules = { int32 Nbinx =  120  double xmin = -3.0 double xmax =  3.0 }  
 }
  

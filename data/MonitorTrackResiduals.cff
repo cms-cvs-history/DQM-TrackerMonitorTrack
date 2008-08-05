@@ -1,17 +1,11 @@
-##
-## TrackRefitter 
-##
-
+#TrackRefitter With Material
 include "RecoTracker/TrackProducer/data/RefitterWithMaterial.cff"
-
-replace TrackRefitter.src = "ctfWithMaterialTracks"
 replace TrackRefitter.TrajectoryInEvent = true
-# usually without refit: 
-replace TrackRefitter.TTRHBuilder = "WithoutRefit"# TransientTrackingRecHitBuilder: no refit of hits...
-include "RecoTracker/TransientTrackingRecHit/data/TransientTrackingRecHitBuilderWithoutRefit.cfi"
+# usually without refit: # TransientTrackingRecHitBuilder: no refit of hits...
+#replace TrackRefitter.TTRHBuilder = "WithoutRefit"
+#include "RecoTracker/TransientTrackingRecHit/data/TransientTrackingRecHitBuilderWithoutRefit.cfi"
 # ... but matching for strip stereo should be redone: 
-replace ttrhbwor.Matcher = "StandardMatcher"
-
+#replace ttrhbwor.Matcher = "StandardMatcher"
 
 module MonitorTrackResidualsTier0 = MonitorTrackResiduals from "DQM/TrackerMonitorTrack/data/MonitorTrackResiduals.cfi"
 replace MonitorTrackResidualsTier0.OutputMEsInRootFile = false
@@ -26,7 +20,7 @@ replace MonitorTrackResidualsStandAlone.OutputMEsInRootFile = true
 replace MonitorTrackResidualsStandAlone.Mod_On = false
 
 
-
+# Sequences
 sequence DQMMonitorTrackResidualsTier0 = {
     TrackRefitter , 
     MonitorTrackResidualsTier0
